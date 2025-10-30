@@ -19,6 +19,10 @@ const supabase = createClient(
   SUPABASE_SERVICE_ROLE_KEY // clave privada (no expongas esta)
 );
 
+app.get("/", (req, res) => {
+  res.send("¡Servidor funcionando!");
+}
+
 // --- LOGIN ---
 app.post("/login", async (req, res) => {
   const { email, password, fingerprint } = req.body;
