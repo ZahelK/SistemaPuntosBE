@@ -21,7 +21,7 @@ const supabase = createClient(
 
 app.get("/", (req, res) => {
   res.send("¡Servidor funcionando!");
-}
+}),
 
 // --- LOGIN ---
 app.post("/login", async (req, res) => {
